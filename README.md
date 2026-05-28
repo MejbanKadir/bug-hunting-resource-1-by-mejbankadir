@@ -101,6 +101,8 @@ cat params.txt | grep "=" | x8 --wordlist assetnote_params.txt --output live_inj
 This repository is explicitly provided for academic research and authorized vulnerability assessment scenarios. Do not run horizontal cloud scanning fleets or execute OOB payloads against entities without formal, written legal scope clearance.
 
 About Mejbankadir:
-  -- Security Researcher,Developer and Trader (Founder of SMH Tech.Nexoamicus)
   
+-- Security Researcher,Developer and Trader (Founder of SMH Tech.Nexoamicus)
+  
+--7 Years of experience 
 

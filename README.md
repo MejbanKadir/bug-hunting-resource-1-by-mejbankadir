@@ -86,3 +86,21 @@ A highly curated, advanced repository of distributed reconnaissance tools, deep 
 subfinder -d target.com -all -silent | anew subs.txt
 puredns resolve subs.txt -r resolvers.txt --silent | anew resolved.txt
 httpx -l resolved.txt -title -tech-detect -status-code -silent -o alive_meta.txt
+
+```
+### High-Velocity Archive Endpoint Fuzzing Matrix
+```bash
+gau --subs target.com | grep -E "\.(js|json|xml|yaml|yml|config)$" | anew sensitive_urls.txt
+cat sensitive_urls.txt | httpx -status-code -mc 200 -silent
+```
+### Deep Parameter Injection Testing Preparation
+```bash
+paramspider -d target.com --level high -o params.txt
+cat params.txt | grep "=" | x8 --wordlist assetnote_params.txt --output live_injections.txt
+```
+This repository is explicitly provided for academic research and authorized vulnerability assessment scenarios. Do not run horizontal cloud scanning fleets or execute OOB payloads against entities without formal, written legal scope clearance.
+
+About Mejbankadir:
+  -- Security Researcher,Developer and Trader (Founder of SMH Tech.Nexoamicus)
+  
+
